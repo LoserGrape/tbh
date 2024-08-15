@@ -314,7 +314,7 @@ local PSection = ABTab:NewSection("< Ability Spam >")
 
 local isActive = false
 
-MainSection:NewToggle("Demolition Explosion Spam", " - "dont swear" big gas -", function(state)
+PSSection:NewToggle("Demolition Explosion Spam", " - "dont swear" big gas -", function(state)
     isActive = state
     if state then
         while isActive do
