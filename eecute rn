@@ -211,3 +211,21 @@ ESSection:NewButton("STOP", " ", function()
 }
 game:GetService("ReplicatedStorage").STOP:FireServer(unpack(args))
 end)
+
+ESSection:NewButton("Baller", " ", function()
+    fireclickdetector(workspace.Lobby.Baller.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
+end)
+
+ESSection:NewButton("Whirlwind", " ", function()
+    fireclickdetector(workspace.Lobby.Whirlwind.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
+end)
+
+ESSection:NewButton("Excavator", " ", function()
+    fireclickdetector(workspace.Lobby.Excavator.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Excavator:InvokeServer()
+end)
