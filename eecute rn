@@ -311,3 +311,5 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
 end)
 
 local PSection = ABTab:NewSection("< Ability Spam >")
+
+local TTab = Window:NewTab("- Teleport's -")
