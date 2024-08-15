@@ -293,3 +293,21 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
 wait(0.08)
 game:GetService("ReplicatedStorage").Events.c4:FireServer()
 end)
+
+EOCSection:NewButton("Beach Ball", " ", function()
+    fireclickdetector(workspace.Lobby.Beachball.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
+end)
+
+EOCSection:NewButton("ShotGUn", " ", function()
+    fireclickdetector(workspace.Lobby.Shotgun.ClickDetector)
+    wait(0.01)
+      local args = {
+  [1] = "buckshot"
+}
+
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
+end)
+
+local PSection = ABTab:NewSection("< Passive Gloves >")
