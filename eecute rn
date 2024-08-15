@@ -335,3 +335,7 @@ end)
 TLSection:NewButton("Teleport To Moai Island", " ", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island4["Big Tree"].Bark.CFrame * CFrame.new(3. -4, 0)
 end)
+
+local TLESection = TPTab:NewSection("< End Of Teleports >")
+
+local AUTab = Window:NewTab("- AutoFarm -")
