@@ -184,3 +184,30 @@ ESSection:NewButton("Duelist", " ", function()
     wait(0.01)
   game:GetService("ReplicatedStorage").DuelistAbility:FireServer()
 end)
+
+ESSection:NewButton("Woah", " ", function()
+    fireclickdetector(workspace.Lobby.woah.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").VineThud:FireServer()
+end)
+
+ESSection:NewButton("Engineer", " ", function()
+    fireclickdetector(workspace.Lobby.Engineer.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Sentry:FireServer()
+end)
+
+ESSection:NewButton("Rocky", " ", function()
+    fireclickdetector(workspace.Lobby.Rocky.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").RockyShoot:FireServer()
+end)
+
+ESSection:NewButton("STOP", " ", function()
+    fireclickdetector(workspace.Lobby.STOP.ClickDetector)
+    wait(0.01)
+   local args = {
+  [1] = true
+}
+game:GetService("ReplicatedStorage").STOP:FireServer(unpack(args))
+end)
