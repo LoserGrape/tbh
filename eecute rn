@@ -311,16 +311,3 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
 end)
 
 local PSection = ABTab:NewSection("< Ability Spam >")
-
-   PSection:NewToggle("Spam Null's Ability [FREE]", " ", function(state)
-            getgenv().nullspam = state
-    
-        while getgenv().nullspam do
-            game:GetService("ReplicatedStorage"):WaitForChild("NullAbility"):FireServer()
-        task.wait(0.5)
-        end
-    end)
-
-local TeleTab = Window:NewTab(" - Teleports - ")
-
-local TSection = TeleTab:NewSection("Teleports)
