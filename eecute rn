@@ -315,3 +315,11 @@ local PSection = ABTab:NewSection("< Ability Spam >")
 local TPTab = Window:NewTab("- Teleport's -")
 
 local TLSection = TPTab:NewSection("< Teleports >")
+
+TLSection:NewButton("Teleport To Lobby", " ", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-798.47345, 329.357147, 0.84058404, -0.791819096, -2.52048302e-08, -0.610755682, -2.72838037e-08, 1, -5.89596372e-09, 0.610755682, 1.19952013e-08, -0.791819096)
+end)
+
+Section:NewButton("Teleport To Main Arena", " ", function()
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.3642788, -3.69053721, -7.41954088, 0.405183077, -0.00669269683, -0.914211094, -1.2553046e-05, 0.999973178, -0.00732610561, 0.914235532, 0.00297989813, 0.40517211)
+end)
