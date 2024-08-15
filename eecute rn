@@ -332,10 +332,6 @@ TLSection:NewButton("Teleport To Slapple Island", " ", function()
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island5.Union.CFrame
 end)
 
-TLSection:NewButton("Teleport To Moai island", " ", function()
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island4["Big Tree"].Bark.CFrame * CFrame.new(3. -4, 0)
-end
-
 TLSection:NewButton("Teleport To The Plate", " ", function()
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.Plate.CFrame
 end)
