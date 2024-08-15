@@ -327,11 +327,3 @@ end)
 TLSection:NewButton("Teleport To Slapple Island", " ", function()
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island5.Union.CFrame
 end)
-
-TLSection:NewButton("Teleport To Slapple Island", " ", function()
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island5.Union.CFrame
-end)
-
-TLSection:NewButton("Teleport To The Plate", " ", function()
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.Plate.CFrame
-end)
