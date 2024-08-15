@@ -321,15 +321,4 @@ local PSection = ABTab:NewSection("< Ability Spam >")
         end
     end)
 
-    PSection:NewToggle("Spam Rhythm Explosion [Also Free lol]", " ", function(state)
-        getgenv().spamrhytm = state
-        while getgenv().spamrhytm do
-            local args = {
-        [1] = "AoeExplosion",
-        [2] = 42
-    }
-    
-    game:GetService("ReplicatedStorage"):WaitForChild("rhythmevent"):FireServer(unpack(args))
-    task.wait(0.1)
-    end
-    end)
+local TeleTab = Window:NewTab(" - Teleports - ")
