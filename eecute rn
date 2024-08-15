@@ -312,4 +312,6 @@ end)
 
 local PSection = ABTab:NewSection("< Ability Spam >")
 
-local TTab = Window:NewTab("- Teleport's -")
+local TPTab = Window:NewTab("- Teleport's -")
+
+local TLSection = TPTab:NewSection("< Teleports >")
