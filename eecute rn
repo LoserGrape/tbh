@@ -279,3 +279,17 @@ RESection:NewButton("UFO", " ", function()
     wait(0.01)
   game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
 end)
+
+local EOCSection = ABTab:NewSection("< End OF Paid Gloves >")
+
+EOCSection:NewButton("Demolition (Explodes On Press)", " ", function()
+    fireclickdetector(workspace.Lobby.Demolition.ClickDetector)
+    wait(0.01)
+    local args = {
+  [1] = "c4"
+}
+
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
+wait(0.08)
+game:GetService("ReplicatedStorage").Events.c4:FireServer()
+end)
