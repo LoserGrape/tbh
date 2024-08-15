@@ -1,5 +1,186 @@
-local args = {
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("WhaleScripts | Slap Battles", colors)
+
+local colors = {
+    SchemeColor = Color3.fromRGB(0,255,255),
+    Background = Color3.fromRGB(0, 0, 0),
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+
+local CredsTab = Window:NewTab(" - Credits - ")
+
+local V2Section = CredsTab:NewSection("< Coded By @WhaleRoblox On YouTube [GO SUBSCRIBE!] >")
+
+V2Section:NewButton("Print My Youtube URL", " ", function()
+    print("Youtube.com/@WhaleRoblox")
+end)
+
+local JahSection = CredsTab:NewSection("< Message Me On discord if he script has a issue >")
+
+JahSection:NewButton("Print My Discord Username", " ", function()
+    print("artbilli")
+end)
+
+local JuhSection = CredsTab:NewSection("< Thanks To GalaxyScripts For Helping Scripting >")
+
+JuhSection:NewButton("Print His Youtube URL Link", " ", function()
+    print("youtube.com/@GalaxyScriptz")
+end)
+
+JuhSection:NewButton("Print His Discord UserName", " ", function()
+    print("GalaxyScriptzr")
+end)
+
+local ABTab = Window:NewTab(" - Ability Abuser - ")
+
+local ABSection = ABTab:NewSection("< Ability Abuser >")
+
+local ABSection = ABTab:NewSection("< WARNING: BEFORE USING ANYTHING PRESS THIS >")
+
+ABSection:NewButton("Teleport To Arena", " ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.3642788, -3.69053721, -7.41954088, 0.405183077, -0.00669269683, -0.914211094, -1.2553046e-05, 0.999973178, -0.00732610561, 0.914235532, 0.00297989813, 0.40517211)
+		
+end)
+
+local ABSection = ABTab:NewSection("< Free Abilitys >")
+
+ABSection:NewButton("Null Ability", " ", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("NullAbility"):FireServer()
+end)
+
+ABSection:NewButton("Rhythm Explosion", " ", function()
+                local args = {
+        [1] = "AoeExplosion",
+        [2] = 42
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("rhythmevent"):FireServer(unpack(args))
+end)
+
+ABSection:NewButton("Blasphemy's Piano", "", function()
+    game:GetService("ReplicatedStorage").Piano:FireServer()
+end)
+
+ABSection:NewToggle("SpeedRun WalkSpeed", " ", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
+    end
+end)
+
+local ABSection = ABTab:NewSection("< Abilitys Required With Slaps >")
+
+ABSection:NewButton("Diamond", " ", function()
+    fireclickdetector(workspace.Lobby.Diamond.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Rockmode:FireServer()
+end)
+
+ABSection:NewButton("ZZZZZZZ", " ", function()
+    fireclickdetector(workspace.Lobby.ZZZZZZZ.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").ZZZZZZZSleep:FireServer()
+end)
+
+ABSection:NewButton("Flash", " ", function()
+    fireclickdetector(workspace.Lobby.Flash.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").FlashTeleport:FireServer()
+end)
+
+ABSection:NewButton("Swapper", " ", function()
+    fireclickdetector(workspace.Lobby.Swapper.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").SLOC:FireServer()
+end)
+
+local GHSection = ABTab:NewSection("< GHOST ENABLE/DISABLE >")
+
+GHSection:NewButton("Ghost Enable", " ", function()
+    fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Ghostinvisibilityactivated:FireServer()
+end)
+
+GHSection:NewButton("Ghost Disable", " ", function()
+    fireclickdetector(workspace.Lobby.Ghost.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Ghostinvisibilitydeactivated:FireServer()
+end)
+
+local AJSection = ABTab:NewSection("< Normal Section >")
+
+AJSection:NewButton("Thanos [Sound Effect Only]", " ", function()
+    fireclickdetector(workspace.Lobby.Thanos.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Illbeback:FireServer()
+end)
+
+AJSection:NewButton("Fort", " ", function()
+    fireclickdetector(workspace.Lobby.Fort.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Fortlol:FireServer()
+end)
+
+
+AJSection:NewButton("Space [Sound Effect Only]", " ", function()
+    fireclickdetector(workspace.Lobby.Space.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").ZeroGSound:FireServer()
+end)
+
+AJSection:NewToggle("SpeedRun", " ", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
+    end
+end)
+
+AJSection:NewButton("Mail", " ", function()
+    fireclickdetector(workspace.Lobby.Mail.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").MailSend:FireServer()
+end)
+
+
+AJSection:NewButton("Golden", " ", function()
+    fireclickdetector(workspace.Lobby.Golden.ClickDetector)
+    wait(0.01)
+  local args = {
   [1] = true
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Goldify"):FireServer(unpack(args))
+
+end)
+
+AJSection:NewButton("MR / Cheeky ", " ", function()
+    fireclickdetector(workspace.Lobby.MR.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Spherify:FireServer()
+end)
+
+AJSection:NewButton("Replica", " ", function()
+    fireclickdetector(workspace.Lobby.Replica.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").Duplicate:FireServer()
+end)
+
+local ESSection = ABTab:NewSection("< The More Expensive Things >")
+
+ESSection:NewButton("Reverse", " ", function()
+    fireclickdetector(workspace.Lobby.Reverse.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").ReverseAbility:FireServer()
+end)
+
+ESSection:NewButton("Duelist", " ", function()
+    fireclickdetector(workspace.Lobby.Duelist.ClickDetector)
+    wait(0.01)
+  game:GetService("ReplicatedStorage").DuelistAbility:FireServer()
+end)
