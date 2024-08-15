@@ -311,25 +311,3 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
 end)
 
 local PSection = ABTab:NewSection("< Ability Spam >")
-
-local isActive = false
-
-PSection:NewToggle("Demolition Explosion Spam", " - "dont swear" big gas -", function(state)
-    isActive = state
-    if state then
-        while isActive do
-            -- Your script code
-            fireclickdetector(workspace.Lobby.Demolition.ClickDetector)
-            wait(0.01)
-            local args = {
-                [1] = "c4"
-            }
-            game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
-            wait(0.08)
-            game:GetService("ReplicatedStorage").Events.c4:FireServer()
-
-            -- Wait 1 second before executing again
-            wait(1)
-        end
-    end
-end)
