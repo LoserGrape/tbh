@@ -325,7 +325,7 @@ local TeleTab = Window:NewTab(" - Teleports - ")
 
 local TSection = TeleTab:NewSection("Teleports)
 
-    TSection:NewDropdown("Teleport Locations", " ", {"SafePort", "Slapples Isl", "Moai Isl", "Plate", "Battle Arena", "Cannon Island", "Bounti Hunter(Hitman) Room", "Default Arena", "Normal Arena", "Spawn"}, function(abc)
+    TSection:NewDropdown("Teleport Locations"), " ", {"SafePort", "Slapples Isl", "Moai Isl", "Plate", "Battle Arena", "Cannon Island", "Bounti Hunter(Hitman) Room", "Default Arena", "Normal Arena", "Spawn"}, function(abc)
       if abc == "Slapple island" then
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island5.Union.CFrame
      elseif abc == "Moai Isl" then
