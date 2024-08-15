@@ -323,3 +323,19 @@ end)
 TLSection:NewButton("Teleport To Main Arena", " ", function()
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15.3642788, -3.69053721, -7.41954088, 0.405183077, -0.00669269683, -0.914211094, -1.2553046e-05, 0.999973178, -0.00732610561, 0.914235532, 0.00297989813, 0.40517211)
 end)
+
+TLSection:NewButton("Teleport To Slapple Island", " ", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island5.Union.CFrame
+end)
+
+TLSection:NewButton("Teleport To Slapple Island", " ", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island5.Union.CFrame
+end)
+
+TLSection:NewButton("Teleport To Moai island", " ", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.island4["Big Tree"].Bark.CFrame * CFrame.new(3. -4, 0)
+end
+
+TLSection:NewButton("Teleport To The Plate", " ", function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.Plate.CFrame
+end)
