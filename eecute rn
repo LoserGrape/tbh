@@ -414,9 +414,10 @@ SPCSection:NewToggle("Blasphemy Piano Spam", " d    e   a    t  h ", function(st
         end)
     else
 
-local BGSTab = Window:NewTab("- Badges -")
         if spamLoop then
             spamLoop:Disconnect()
         end
     end
 end)
+
+local BGSTab = Window:NewTab("- Badges -")
