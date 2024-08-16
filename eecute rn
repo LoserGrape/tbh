@@ -405,4 +405,18 @@ local SPCSection = CBTab:NewSection("< Spam-Section >")
 local toggle = false
 local spamLoop
 
-SPCSection:NewToggle("Blasphemy Piano Spam", " d    e   a    t  h ", function(state)
+mainSection:NewToggle("Blasphemy Piano Spam", " ", function(state)
+    toggle = state
+    if toggle then
+        spamLoop = game:GetService("RunService").Heartbeat:Connect(function()
+            wait(1)
+            game:GetService("ReplicatedStorage").Piano:FireServer()
+        end)
+    else
+        if spamLoop then
+            spamLoop:Disconnect()
+        end
+    end
+end)
+
+local Tab = Window:NewTab("- Admin Commands - ")
