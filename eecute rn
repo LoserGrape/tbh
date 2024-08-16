@@ -392,3 +392,12 @@ local SPCSection = CBTab:NewSection("< Spam-Section >")
     task.wait(0.1)
     end
     end)
+
+    SPCSection:NewToggle("Null Ability Spam", "i hear you like em young...", function(state)
+            getgenv().nullspam = state
+    
+        while getgenv().nullspam do
+            game:GetService("ReplicatedStorage"):WaitForChild("NullAbility"):FireServer()
+        task.wait(0.5)
+        end
+    end)
