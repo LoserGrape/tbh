@@ -419,4 +419,4 @@ mainSection:NewToggle("Blasphemy Piano Spam", " ", function(state)
     end
 end)
 
-local Tab = Window:NewTab("- Admin Commands - ")
+local AdminTab = Window:NewTab("- Admin Commands - ")
