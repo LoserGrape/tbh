@@ -376,4 +376,19 @@ local CBMSection = CBTab:NewSection("< Combat >")
     end
     end)
 
+-------------spam section - code: SPC
+
 local SPCSection = CBTab:NewSection("< Spam-Section >")
+
+    SPCSection:NewToggle("Rhythm-Explosion Spam", "say drake...", function(state)
+        getgenv().spamrhytm = state
+        while getgenv().spamrhytm do
+            local args = {
+        [1] = "AoeExplosion",
+        [2] = 42
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("rhythmevent"):FireServer(unpack(args))
+    task.wait(0.1)
+    end
+    end)
