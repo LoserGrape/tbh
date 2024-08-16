@@ -421,3 +421,7 @@ SPCSection:NewToggle("Blasphemy Piano Spam", " d    e   a    t  h ", function(st
 end)
 
 local BGSTab = Window:NewTab("- Badges -")
+
+local OBASection = BGSTab:NewSection("< Badges >")
+
+local OBASection = BGSTab:NewSection(" OBTAIN ALL BADGES LISTED BELOW")
