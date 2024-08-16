@@ -338,4 +338,4 @@ end)
 
 local TLESection = TPTab:NewSection("< End Of Teleports >")
 
-local AUTab = Window:NewTab("- AutoFarm -")
+local AUTab = Window:NewTab("- Badges -")
