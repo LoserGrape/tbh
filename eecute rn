@@ -375,3 +375,5 @@ local CBMSection = CBTab:NewSection("< Combat >")
     wait(0.1)
     end
     end)
+
+local SPCSection = CBTab:NewSection("< Spam-Section >")
