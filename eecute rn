@@ -405,7 +405,7 @@ local SPCSection = CBTab:NewSection("< Spam-Section >")
 local toggle = false
 local spamLoop
 
-mainSection:NewToggle("Blasphemy Piano Spam", " ", function(state)
+SPCSection:NewToggle("Blasphemy Piano Spam", " ", function(state)
     toggle = state
     if toggle then
         spamLoop = game:GetService("RunService").Heartbeat:Connect(function()
