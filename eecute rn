@@ -340,7 +340,7 @@ local TLESection = TPTab:NewSection("< End Of Teleports >")
 
 local CBTab = Window:NewTab("- Combat -")
 
-local CBMSection = Tab:NewSection("< Combat >")
+local CBMSection = CBTab:NewSection("< Combat >")
 
     CBMSection:NewToggle("Slap-Aura", " ", function(state)
     getgenv().slapaura = state
