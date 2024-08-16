@@ -419,6 +419,6 @@ mainSection:NewToggle("Blasphemy Piano Spam", " ", function(state)
     end
 end)
 
-local AdminTab = Window:NewTab("- Admin - - ")
+local ADMTab = Window:NewTab("- Admin CMDS - ")
 
-local BFDISection = AdminTab:NewSection("< Admin Command's >")
+local BFASection = ADMTab:NewSection("< Admin Command's >")
