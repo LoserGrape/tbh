@@ -413,6 +413,8 @@ SPCSection:NewToggle("Blasphemy Piano Spam", " d    e   a    t  h ", function(st
             game:GetService("ReplicatedStorage").Piano:FireServer()
         end)
     else
+
+local BGSTab = Window:NewTab("- Badges -")
         if spamLoop then
             spamLoop:Disconnect()
         end
