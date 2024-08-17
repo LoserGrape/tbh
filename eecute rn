@@ -1,3 +1,10 @@
+if not game.ReplicatedStorage:FindFirstChild("summonPortal") then
+local robAnim = Instance.new("Animation")
+robAnim.AnimationId = "rbxassetid://13675136513"
+robAnim.Parent = game.ReplicatedStorage
+robAnim.Name = "summonPortal"
+end
+
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
 local Window = Library.CreateLib("WhaleScripts | Slap Battles", colors)
