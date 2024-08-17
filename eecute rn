@@ -431,6 +431,6 @@ end)
 
 local ADTSection = ADMTab:NewSection("< TUTORIAL FOR ADMIN  >")
 
-Section:NewButton("Print Tutorial Guide", " ", function()
+ADTSection:NewButton("Print Tutorial Guide", " ", function()
     print("alright skibidis, sit down and grab yourself a grimace shake, anyways, to work admin use teleport to main arena before using/typing anything like :diamond , if you enter arena then type :diamond you WILL be kicked from the game, so i repeat, use teleport to arena, question 2: what are the commands?/ how to work them? well, to understand you ALWAYS need to capitalize the first letter, ex: :Diamond , the prefix is : so dont forget! and characters with spaces wont register, i will add them soon so dw/")
 end)
