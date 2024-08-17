@@ -448,6 +448,6 @@ ODSection:NewButton("Infinite Yield ", "im bout to fart", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-local CTMTab = Window:NewTab("- Trolling - ")
+local ALTab = Window:NewTab("- Alternate Games - ")
 
-local CSSection = CTMTab:NewSection("< Trolling >")
+local ALTSection = ALTab:NewSection("< Alternate Games >")
