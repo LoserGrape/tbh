@@ -440,3 +440,17 @@ local ODSection = ADMTab:NewSection("< Other Admin Scripts  >")
 ODSection:NewButton("Infinite Yield ", "im bout to fart", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+
+local CTMTab = Window:NewTab("- Custom Gloves - ")
+
+local CSSection = CTMTab:NewSection("< Custom Gloves >")
+
+local DJSection = CTMTab:NewSection("< Custom Gloves Made By Others >")
+
+DJSection:NewButton("Insanity Shatter [GalaxyScriptz] [USE IN LOBBY]", "gadagadigadao!", function()
+   game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.summonPortal, game.Players.LocalPlayer.Character.Humanoid):Play()
+ wait(2)
+fireclickdetector(workspace.Lobby.BONK.ClickDetector)
+wait(0.01)
+game:GetService("ReplicatedStorage").BONK:FireServer()
+end)
