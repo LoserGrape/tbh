@@ -449,7 +449,7 @@ local DJSection = CTMTab:NewSection("< Custom Gloves Made By Others >")
 
 DJSection:NewButton("Insanity Shatter [GalaxyScriptz] [USE IN LOBBY]", "gadagadigadao!", function()
    game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.summonPortal, game.Players.LocalPlayer.Character.Humanoid):Play()
- wait(2)
+ wait(3)
 fireclickdetector(workspace.Lobby.BONK.ClickDetector)
 wait(0.01)
 game:GetService("ReplicatedStorage").BONK:FireServer()
