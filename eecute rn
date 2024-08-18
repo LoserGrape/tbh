@@ -18,8 +18,6 @@ C1Section:NewButton("Copy My YouTube Channel Link", " ", function()
     setclipboard('https://www.youtube.com/@SlapBattlesRepository')
 end)
 
-local C2Section = CDTab:NewSection("Thank You Also!!!")
-
 local player = game.Players.LocalPlayer
 local username = player.Name
 local C2Section = CDTab:NewSection("And Thank You, " .. username .. ", For Using")
